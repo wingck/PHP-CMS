@@ -31,33 +31,33 @@ $result = mysqli_query( $connect, $query );
 ?>
 <h2>Manage Projects</h2>
 
-<table>
-  <tr>
-    <th></th>
-    <th align="center">ID</th>
-    <th align="left">Title</th>
-    <th align="center">Type</th>
-    <th align="center">Date</th>
-    <th></th>
-  </tr>
+<div class="grid-container">
+    <div></div>
+    <div class="grid-title">ID</div>
+    <div class="grid-title">Title</div>
+    <div class="grid-title">Type</div>
+    <div class="grid-title">Date</div>
+    <div></div>
   <?php while( $record = mysqli_fetch_assoc( $result ) ): ?>
-    <tr>
-      <td align="center">
+    
+    <div >
         <img src="image.php?type=project&id=<?php echo $record['id']; ?>&width=300&height=300&format=inside">
-      </td>
-      <td align="center"><?php echo $record['id']; ?></td>
-      <td align="left">
+    </div>
+    <div class="grid-id"><div class="grid-title-small">ID</div><?php echo $record['id']; ?></div>
+     <div>
+        <div class="grid-title-small">Title</div>
         <?php echo htmlentities( $record['title'] ); ?>
         <small><?php echo $record['content']; ?></small>
-      </td>
-      <td align="center"><?php echo $record['type']; ?></td>
-      <td align="center" style="white-space: nowrap;"><?php echo htmlentities( $record['date'] ); ?></td>
-      <td align="center"><a href="projects_photo.php?id=<?php echo $record['id']; ?>"><i class="fa-solid fa-image"></i></a><br><br><a href="projects_edit.php?id=<?php echo $record['id']; ?>"><i class="fa-solid fa-pen-to-square"></i></a><br><br>
+    </div>
+    <div><div class="grid-title-small">Type</div><?php echo $record['type']; ?></div>
+    <div style="white-space: nowrap;"><div class="grid-title-small">Date</div><?php echo htmlentities( $record['date'] ); ?></div>
+    <div><a href="projects_photo.php?id=<?php echo $record['id']; ?>"><i class="fa-solid fa-image"></i></a><br><br><a href="projects_edit.php?id=<?php echo $record['id']; ?>"><i class="fa-solid fa-pen-to-square"></i></a><br><br>
         <a href="projects.php?delete=<?php echo $record['id']; ?>" onclick="javascript:confirm('Are you sure you want to delete this project?');"><i class="fa-solid fa-trash"></i></a>
-      </td>
-    </tr>
+    </div>
+    
+    
   <?php endwhile; ?>
-</table>
+  </div>
 
 <p><a href="projects_add.php"><i class="fas fa-plus-square"></i> Add Project</a></p>
 
