@@ -80,8 +80,8 @@ input[type=submit] {
 }
 
 #dashboard {
-  margin-top: auto;
-  margin-bottom: auto;
+  /* margin-top: auto;
+  margin-bottom: auto; */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -93,17 +93,18 @@ input[type=submit] {
 #dashboard li a:visited,
 #dashboard li a:active,
 #dashboard li a:hover {
-  color: #fff;
+  color: black;
 }
 #dashboard li {
-  background-color: #eb741d;
+  background-color: rgb(231, 241, 247);
   display: inline-block;
-  min-width: 12em;
-  max-width: 12em;
+  width: 15em;
+  height: 5em;
   margin: .5em;
-  padding: 2em 1em;
+  padding-top: 2em;
   box-sizing: border-box;
   text-align: center;
+  /* vertical-align: middle; */
   list-style: none;
   list-style-position: inside;
   border: none;
@@ -113,7 +114,10 @@ input[type=submit] {
 }
 /* maximum-size */
 .fa-solid{
-  color: white;
+  color: black;
+}
+.fa-solid:hover{
+  color:rgb(171, 144, 144);
 }
 .grid-title, .grid-title-2, .grid-title-3{
   text-align: center;
@@ -122,20 +126,20 @@ input[type=submit] {
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: black;
-    color: white;
+    background-color: rgb(205, 216, 232);
+    color: black;
 }
 .grid-container-2, .grid-container-4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: black;
-    color: white;
+    background-color: rgb(205, 216, 232);
+    color: black;
 }
 .grid-container-3{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  background-color: black;
-  color:white;
+  background-color: rgb(205, 216, 232);
+  color:black;
 }
 .grid-title-small, .grid-title-small-2, .grid-title-small-3{
   display: none;
