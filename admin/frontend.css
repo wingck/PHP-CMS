@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+* {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin:0;
+    padding:0;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+/* TEXT */
+
+h1 {
+    font-size: 1.2em;
+}
+
+a {
+  font-size: .5em;
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: black
+}
+
+label {
+  display: block;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: .9em;
+  padding: 5px;
+  width: 100%;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+textarea {
+  border-radius: 0;
+  font-size: .9em;
+  padding: 5px;
+  width: 100%;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+}
+
+input {
+  border-radius: 0;
+  font-size: .9em;
+  padding: 5px;
+  width: 100%;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  border: 0;
+  background-color: #eb741d;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+#dashboard {
+  padding: 0;
+  margin: 0;
+}
+
+#dashboard li a:link,
+#dashboard li a:visited,
+#dashboard li a:active,
+#dashboard li a:hover {
+  color: #fff;
+}
+#dashboard li {
+  background-color: #ffffff;
+  display: inline-block;
+  width: 22%;
+  margin: 1%;
+  padding: 2%;
+  box-sizing: border-box;
+  text-align: center;
+  list-style: none;
+  list-style-position: inside;
+  border: none;
+}
+#dashboard i {
+  margin-bottom: 5px;
+}
+.hero-banner{
+  background:url("https://images3.alphacoders.com/892/892936.jpg") no-repeat fixed center;
+  color: white;
+  height: 700px;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  z-index:0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-banner div{
+  font-size: 65px;
+}
+.line1{
+  animation: left 1.5s linear forwards;
+}
+@keyframes left{
+  0%{
+    transform: translate(0);
+    opacity:0;
+  }
+  100%{
+    transform: translate(-50px, 0);
+    opacity:1;
+  }
+}
+.line2{
+  animation: right 1.5s linear forwards;
+}
+@keyframes right{
+  0%{
+    transform: translate(0);
+    opacity:0;
+  }
+  100%{
+    transform: translate(50px, 0);
+    opacity:1;
+  }
+}
+.block-section{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ font-size: 25px;
+ padding: 30px 0;
+ background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+ color: white;
+}
+.video-section{
+  margin: 0 auto;
+}
+.content{
+  padding-top: 40px;
+}
+.content a{
+  font-size: 25px;
+}
+.content a:hover{
+  color: white;
+}
+.article-block{
+  padding-top: 100px;
+  width: 1470px;
+  height: 650px;
+  font-size: 30px;
+  color:white;
+  background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+.article-block a{
+  color: white;
+}
+.article-block a:hover{
+  color:rgb(205, 216, 232);
+}
+.article-sub-block{
+  padding-left: 20px;
+}
+.article-link{
+  margin-bottom: 20px;
+}
+/* nav-bar */
+#main-menu {
+  display: flex;
+  list-style-type: none;
+  position: fixed;
+  font-size: 70px;
+  width: 100%;
+  background-color:white;
+  box-shadow: 0 0 20px black;
+  z-index:1;
+}
+#main-menu ul {
+  padding: 0 0 5px 0;
+}
+#main-menu li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 0 20px 0 20px;
+}
+#main-menu ul ul {
+  position: absolute;
+  left: -10000px;
+  border-style: none;
+}
+#main-menu li li {
+  display: block;
+  white-space: nowrap;
+}
+#main-menu li:hover{
+  background-color: rgb(231, 241, 247)
+}
+#main-menu li:hover ul {
+  left: 0;
+  animation: drop 400ms ;
+  transform-origin: top center;
+  background-color:white;
+}
+.index-info a{
+  color: white;
+}
+.index-info a:hover{
+  color: rgb(205, 216, 232);
+}
+.phen-block{
+  background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+.phen-sub-block{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.phen-sub-image{
+  width: 400px;
+  margin: 100px auto 30px;
+  border-radius: 50px;
+  box-shadow: 0 0 30px white;
+}
+/* homepage-responsive*/
+@media (max-width: 1180px){
+  .block-section{
+    grid-template-columns: 1fr;
+  }
+  .index-description{
+    display:none
+  }
+  .index-info{
+    text-align:center;
+  }
+}
+@media (max-width: 710px){
+  .hero-banner div{
+    font-size: 48px;
+  }
+}
+/* sub-pages */
+.sub-block{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  color: white;
+  background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+.sub-image{
+  width: 400px;
+  margin: 200px auto 50px;
+  border-radius: 50px;
+  box-shadow: 0 0 30px white;
+}
+.sub-block-info{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 20px;
+}
+.sub-link{
+  text-align: center;
+}
+.sub-link a{
+  font-size: 30px;
+  color: white;
+}
+.sub-link a:hover{
+  color: rgb(205, 216, 232);
+}
+.sub-content{
+  margin: 0 auto;
+  width: 50%;
+}
+/* sub-page-responsive */
+@media (max-width: 880px){
+  .sub-content{
+    width: 100%;
+  }
+}
+/* menu-responsive */
+@media (max-width: 635px){
+  #main-menu{
+    font-size: 49px;
+  }
+}
